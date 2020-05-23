@@ -2,7 +2,7 @@
 
 git checkout master
 git pull
-
+git checkout version2
 
 RANDOM=$$
 
@@ -17,7 +17,6 @@ for i in `seq 100` ; do
 	fi
 done
 
-git checkout version2
 git add .
 git commit -m "Adding more stuff"
 git push origin version2
