@@ -11,7 +11,7 @@ fi
 for i in `seq 8` ; do
 	a=$(($RANDOM%20))
 	echo $a >> $a.txt
-	if [ -z ${text_add} ]; then
+	if [ -z ${text_add} ] ; then
 		text_add="$a"
 	else
 		text_add="${text_add} $a"
@@ -22,7 +22,7 @@ done
 for i in `seq 4` ; do
 	a=$(($RANDOM%20))
 	rm $a.txt
-	if [ -z ${text_delete} ]; then
+	if [ -z ${text_delete} ] ; then
 		text_delete="$a"
 	else
 		text_delete="${text_delete},$a"
