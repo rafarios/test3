@@ -1,6 +1,8 @@
 #!/bin/bash
 RANDOM=$$
 
+if [ -z ${b} ] ; then echo "b is unset" ; else echo "b is set" ; fi
+
 #add content to some files
 for i in `seq 8` ; do
 	a=$(($RANDOM%20))
