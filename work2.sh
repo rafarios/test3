@@ -1,8 +1,6 @@
 #!/bin/bash
 
-git checkout master
-git pull
-git checkout version2
+git checkout version3
 
 RANDOM=$$
 
