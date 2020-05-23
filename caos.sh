@@ -15,4 +15,4 @@ done
 
 git add .
 git commit -m '$a'
-git push
+git push origin master
