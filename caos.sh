@@ -2,17 +2,17 @@
 RANDOM=$$
 
 #add content to some files
-for i in `seq 10` ; do
+for i in `seq 8` ; do
 	a=$(($RANDOM%20))
 	echo $a >> $a.txt
-	text_add="${text_add} $a"
+	text_add="${text_add},$a"
 done
 
 #delete some files
-for i in `seq 5` ; do
+for i in `seq 4` ; do
 	a=$(($RANDOM%20))
 	rm $a.txt
-	text_delete="${text_delete} $a"
+	text_delete="${text_delete},$a"
 done
 
 dt=$(date '+%d/%m/%Y %H:%M:%S');
