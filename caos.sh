@@ -13,7 +13,7 @@ for i in `seq 12` ; do
 done
 
 #delete some files
-for i in `seq 2` ; do
+for i in `seq 3` ; do
 	a=$(($RANDOM%20))
 	rm $a.txt
 	if [ -z ${text_delete} ] ; then
