@@ -12,6 +12,7 @@ for i in `seq 100` ; do
 	fi
 done
 
+git checkout version2
 git add .
 git commit -m "Adding more stuff"
 git push origin version2
