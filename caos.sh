@@ -5,14 +5,22 @@ RANDOM=$$
 for i in `seq 8` ; do
 	a=$(($RANDOM%20))
 	echo $a >> $a.txt
-	text_add="${text_add},$a"
+	if [ -z ${text_add} ]; then
+		text_add="$a"
+	else
+		text_add="${text_add} $a"
+	fi
 done
 
 #delete some files
 for i in `seq 4` ; do
 	a=$(($RANDOM%20))
 	rm $a.txt
-	text_delete="${text_delete},$a"
+	if [ -z ${text_delete} ]; then
+		text_delete="$a"
+	else
+		text_delete="${text_delete},$a"
+	fi
 done
 
 dt=$(date '+%d/%m/%Y %H:%M:%S');
