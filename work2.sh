@@ -1,4 +1,9 @@
 #!/bin/bash
+
+git checkout master
+git pull
+
+
 RANDOM=$$
 
 #add content to some files
