@@ -13,5 +13,5 @@ for i in `seq 3` ; do
 	rm $a.txt
 done
 
-
-git commit 
+git add .
+git commit -m '$a'
