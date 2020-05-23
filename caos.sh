@@ -14,5 +14,5 @@ for i in `seq 3` ; do
 done
 
 git add .
-git commit -m '$a'
+git commit -m "${a}"
 git push origin master
